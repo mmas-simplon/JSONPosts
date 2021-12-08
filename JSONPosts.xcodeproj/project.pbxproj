@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305666712760AD7800E391FB /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 305666702760AD7800E391FB /* posts.json */; };
+		305666732760AD9D00E391FB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305666722760AD9D00E391FB /* ModelData.swift */; };
+		305666752760AFD600E391FB /* students.json in Resources */ = {isa = PBXBuildFile; fileRef = 305666742760AFD600E391FB /* students.json */; };
+		305666782760B1F000E391FB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305666772760B1F000E391FB /* Student.swift */; };
+		3056667B2760B37A00E391FB /* StudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056667A2760B37A00E391FB /* StudentsView.swift */; };
 		308173F7275F631B000189F4 /* JSONPostsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308173F6275F631B000189F4 /* JSONPostsApp.swift */; };
 		308173F9275F631B000189F4 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308173F8275F631B000189F4 /* PostsView.swift */; };
 		308173FB275F631C000189F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308173FA275F631C000189F4 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		305666702760AD7800E391FB /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		305666722760AD9D00E391FB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		305666742760AFD600E391FB /* students.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = students.json; sourceTree = "<group>"; };
+		305666772760B1F000E391FB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3056667A2760B37A00E391FB /* StudentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsView.swift; sourceTree = "<group>"; };
 		308173F3275F631B000189F4 /* JSONPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		308173F6275F631B000189F4 /* JSONPostsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPostsApp.swift; sourceTree = "<group>"; };
 		308173F8275F631B000189F4 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
@@ -34,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3056666F2760AD5D00E391FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				305666722760AD9D00E391FB /* ModelData.swift */,
+				305666702760AD7800E391FB /* posts.json */,
+				305666742760AFD600E391FB /* students.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		305666762760B1DD00E391FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30817404275F633E000189F4 /* Post.swift */,
+				305666772760B1F000E391FB /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		305666792760B34B00E391FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				308173F8275F631B000189F4 /* PostsView.swift */,
+				3056667A2760B37A00E391FB /* StudentsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		308173EA275F631B000189F4 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				308173F6275F631B000189F4 /* JSONPostsApp.swift */,
-				308173F8275F631B000189F4 /* PostsView.swift */,
-				30817404275F633E000189F4 /* Post.swift */,
+				305666792760B34B00E391FB /* Views */,
+				305666762760B1DD00E391FB /* Models */,
+				3056666F2760AD5D00E391FB /* Resources */,
 				308173FA275F631C000189F4 /* Assets.xcassets */,
 				308173FC275F631C000189F4 /* Preview Content */,
 			);
@@ -129,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				308173FE275F631C000189F4 /* Preview Assets.xcassets in Resources */,
+				305666712760AD7800E391FB /* posts.json in Resources */,
 				308173FB275F631C000189F4 /* Assets.xcassets in Resources */,
+				305666752760AFD600E391FB /* students.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30817405275F633E000189F4 /* Post.swift in Sources */,
+				305666732760AD9D00E391FB /* ModelData.swift in Sources */,
+				3056667B2760B37A00E391FB /* StudentsView.swift in Sources */,
 				308173F9275F631B000189F4 /* PostsView.swift in Sources */,
+				305666782760B1F000E391FB /* Student.swift in Sources */,
 				308173F7275F631B000189F4 /* JSONPostsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,22 +9,13 @@ import SwiftUI
 
 struct PostsView: View {
     
-    @State private var posts: [Post] = []
+    @State private var posts: [Post] = load("posts.json")
+    
     @State private var isErrorPresented = false
     
     var body: some View {
         List(posts) { post in
             Text(post.title)
-        }
-        .task {
-            do {
-                posts = try await Post.getPosts()
-            } catch {
-                isErrorPresented.toggle()
-            }
-        }
-        .alert(isPresented: $isErrorPresented) {
-            Alert(title: Text("Error"), message: Text("Une erreur est survenue"), dismissButton: .default(Text("OK")))
         }
     }
 }
